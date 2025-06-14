@@ -1,4 +1,5 @@
 import Buttons from "./Components/Buttons"
+import Cards from "./Components/Cards"
 
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Buttons />
+      <Cards />
     </>
   )
 }
