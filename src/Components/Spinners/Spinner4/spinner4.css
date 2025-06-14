@@ -1,0 +1,33 @@
+
+.loader6 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(253, 223, 178);
+}
+
+.loader6::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  border: 4px solid rgb(196, 157, 98);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: loader6-animation 2s linear infinite;
+}
+
+@keyframes loader6-animation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}

@@ -1,0 +1,28 @@
+
+.loader3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.loader3::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 5px solid #dddddd;
+  border-top-color: #f0a3a3;
+  border-radius: 50%;
+  animation: loader3-animation 1s ease-out infinite;
+}
+
+@keyframes loader3-animation {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
